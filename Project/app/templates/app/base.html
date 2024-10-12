@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Website{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="icon" href="{% static 'images/logo.jfif' %}" type="image/x-icon">
+</head>
+<body>
+    {% include 'app/navbar.html' %}
+    <div class="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    <script src="{% static 'js/base.js' %}"></script>
+</body>
+</html>

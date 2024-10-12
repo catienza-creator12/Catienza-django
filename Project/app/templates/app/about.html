@@ -1,0 +1,21 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %}About Me{% endblock title %}
+
+{% block content %}
+<center>
+    <h1>About Me</h1>
+    <img class="log" src="{% static 'images/catienza.jfif' %}"
+         alt="Jonathan C. Catienza">
+    <h2>Jonathan C. Catienza</h2>
+    <p>I am Jonathan C. Catienza, 23 years old, and I live in Las Piñas, TS Cruz.</p>
+
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Facebook:</strong> Jonathan Catienza</p>
+        <p><strong>Email:</strong> catienza.jonathan13@gmail.com</p>
+        <p><strong>Phone:</strong> 09385268294</p>
+    </div>
+    </center>
+{% endblock content %}
